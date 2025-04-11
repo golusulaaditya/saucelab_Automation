@@ -38,7 +38,7 @@ Before you can run the project, ensure that you have the following software inst
 - **Maven** – for dependency management and build automation.
 - **Cucumber for Java** – the testing framework for BDD.
 - **Gherkin** – for writing the test scenarios in a natural language format.
-- Web drivers corresponding to browsers you wish to automate (e.g., ChromeDriver for Google Chrome).
+-  Web drivers corresponding to browsers you wish to automate (e.g., ChromeDriver for Google Chrome).
 
 ---
 
@@ -56,9 +56,10 @@ Before you can run the project, ensure that you have the following software inst
  3) Run using maven commands.
 
    ```bash
-     mvn test - to run whole project
+    # To run whole project
+      mvn test 
     # single tag
-    mvn "-Dcucumber.options=--tags @login --features src/test/resources/features/login.feature" test 
+      mvn "-Dcucumber.options=--tags @login --features src/test/resources/features/login.feature" test 
   ```
 
 ## How to push to Git repository
