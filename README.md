@@ -54,14 +54,20 @@ Before you can run the project, ensure that you have the following software inst
  1) Run the test by using TestRunner in runners package.
  2) Goto feature file and Run specific test that is required.
  3) Run using maven commands.
+
+   ```bash
      mvn test - to run whole project
     # single tag
     mvn "-Dcucumber.options=--tags @login --features src/test/resources/features/login.feature" test 
+  ```
 
 ## How to push to Git repository
-git add .
-git commit -m "commit message"
-git push -u origin master 
+
+   ```bash
+   git add .
+   git commit -m "commit message"
+   git push -u origin master 
+```
 
 
 ## configuration
