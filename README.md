@@ -11,6 +11,7 @@ The project leverages Java, Cucumber (with Gherkin), and Maven to write clear, r
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Tests](#running-the-tests)
+- [How to push to Git repository](#how-to-push-to-git-repository)
 - [Configuration](#configuration)
 
 
@@ -50,10 +51,17 @@ Before you can run the project, ensure that you have the following software inst
    cd saucelabs-automation
 
 ## Running the tests
- 
-we can run the tests through Maven or directly via your IDE.
+ 1) Run the test by using TestRunner in runners package.
+ 2) Goto feature file and Run specific test that is required.
+ 3) Run using maven commands.
+     mvn test - to run whole project
+    # single tag
+    mvn "-Dcucumber.options=--tags @login --features src/test/resources/features/login.feature" test 
 
-mvn test
+## How to push to Git repository
+git add .
+git commit -m "commit message"
+git push -u origin master 
 
 
 ## configuration

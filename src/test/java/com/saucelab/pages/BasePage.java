@@ -15,7 +15,7 @@ public class BasePage extends Driver {
         try {
 
             if(new Environment().specifiedEnvironment() == null) {
-                BASE_URL = new Configuration().getPropertiesParameter("stagingUrl");
+                BASE_URL = new Configuration().getPropertiesParameter("prodUrl");
 
             } else {
                 BASE_URL = new Environment().specifiedEnvironment();
